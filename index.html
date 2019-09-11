@@ -28,14 +28,20 @@
     <h1>Trivia Time!</h1>
 
     <h3>Rush! Te clock is ticking!</h3>
+   
         <div class="row bg-light">
         <div class="col">
+            <button type="button" class="btn btn-primary" id="start">Start</button>
+            <!--This TRIVIA ID is called in the js file-->
             <div class="bg-light" id="trivia">
             <p>Lorem Ipsum text for pure testing</p>
             </div>
-            
+            <!--This SUBMIT ID is in js for results-->
              <button type="button" class="btn btn-primary" id="submit">Submit Answers</button>
-            <div id="results"></div>
+            <!--Will print the right IF answers-->
+             <div id="results"></div>
+              <!--Will print the wrong ELSE answers-->
+            <div id="wrongs"></div>
         </div>    
             
         </div>
