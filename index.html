@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Basic Trivia Game</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-    <!-- Added a link to our external stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
 <body>
+
+
+
+
+    <div class="jumbotron">
+        <div class="container col-8">
+            <h1 class="display-4">Trivia Time!</h1>
+            <p id="brain-power" class="lead">You have 30 seconds to test your brain power!
+            </p>
+            <p id="clock-ticks"></p>
+        </div>
+    </div>
 
     <div class="container col-8">
 
-    <h1>Trivia Time!</h1>
+        <div id="quiz" class="main-content">
 
-    <h3>Rush! Te clock is ticking!</h3>
-   
-        <div class="row bg-light">
-        <div class="col">
-            <button type="button" class="btn btn-primary" id="start">Start</button>
-            <!--This TRIVIA ID is called in the js file-->
-            <div class="bg-light" id="trivia">
-            <p>Lorem Ipsum text for pure testing</p>
-            </div>
-            <!--This SUBMIT ID is in js for results-->
-             <button type="button" class="btn btn-primary" id="submit">Submit Answers</button>
-            <!--Will print the right IF answers-->
-             <div id="results"></div>
-              <!--Will print the wrong ELSE answers-->
-            <div id="wrongs"></div>
-        </div>    
-            
+            <button type="button" id="start" class="btn btn-primary">START</button>
+
+            <!-- Time Remaining -->
+            <div id="time"></div>
+
+            <!-- Questions & Answers -->
+            <div id="question1"></div>
+            <div id="answer1"></div>
+            <div id="question2"></div>
+            <div id="answer2"></div>
+            <div id="question3"></div>
+            <div id="answer3"></div>
+            <div id="question4"></div>
+            <div id="answer4"></div>
+            <div id="question5"></div>
+            <div id="answer5"></div>
+            <div id="question6"></div>
+            <div id="answer6"></div>
+            <div id="question7"></div>
+            <div id="answer7"></div>
+            <div id="submit"></div>
+
+            <!-- Results -->
+            <div id="resultsMessage"></div>
+            <div id="correct"></div>
+            <div id="incorrect"></div>
+            <div id="unanswered"></div>
+
         </div>
-          
-
 
     </div>
 
-
-<!-- Game Code -->
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+    <footer class="footer mt-auto py-3">
+        <div class="container col-8">
+            <span class="text-muted">A JQuery exploration by <a href="https://github.com/Ferdmarinho"
+                    target="_blank">Ferd Marinho.</a></span>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Bootstrap JS elements-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--My JS-->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
+
 </html>
