@@ -21,8 +21,8 @@ var questions = [{
     answerList: ["The Metropolitan Museum of Art", "The National Air and Space Museum", "National Museum of Natural History", "California Academy of Sciences"],
     answer: 1
 },{
-    question: "Who sang the \"Friends\" theme song?",
-    answerList: ["Spin Doctors", "The Wallflowers", "Gin Blossoms", "The Rembrandts"],
+    question: "The first American skycraper was completed in 1885 in what city?",
+    answerList: ["New York City", "St. Louis", "Chicago", "Baltimore"],
     answer: 3
 },{
     question: "The 1996 Summer Olympics where held in which U.S. city?",
