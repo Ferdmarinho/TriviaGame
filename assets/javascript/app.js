@@ -34,8 +34,8 @@ var questions = [{
     answer: 3
 },{
     question: "Which one was the first university in the US?",
-    answerList: ["Tangerine", "Blueberry", "Key Lime", "Watermelon"],
-    answer: 3
+    answerList: ["Yale University", "Columbia University", "Harvard University", "University of Pennsylvania"],
+    answer: 2
 }];
 
 
