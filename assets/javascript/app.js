@@ -23,10 +23,10 @@ var questions = [{
 },{
     question: "The first American skycraper was completed in 1885 in what city?",
     answerList: ["New York City", "St. Louis", "Chicago", "Baltimore"],
-    answer: 3
+    answer: 2
 },{
     question: "The 1996 Summer Olympics where held in which U.S. city?",
-    answerList: ["San Antonio", "Atlanta", "Denver", "Houston"],
+    answerList: ["San Antonio, TX", "Atlanta, GA", "Denver, CO", "Houston, TX"],
     answer: 1
 },{
     question: "What is the name of the high school in \"Boy Meets World\"?",

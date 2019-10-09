@@ -1,3 +1,7 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 footer {
 
     margin-top: 20px;
@@ -11,4 +15,8 @@ input {
 
 label {
     display: block;
+}
+
+#jumbotron {
+    background-image: url("https://www.clker.com/cliparts/f/b/e/a/1366159006514254019united-states-stylish-flag-header.jpg");
 }
