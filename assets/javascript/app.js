@@ -29,9 +29,9 @@ var questions = [{
     answerList: ["San Antonio, TX", "Atlanta, GA", "Denver, CO", "Houston, TX"],
     answer: 1
 },{
-    question: "What is the name of the high school in \"Boy Meets World\"?",
-    answerList: ["John Adams High School", "John Henry High School", "John Hancock High School", "Johnny Appleseed High School"],
-    answer: 0
+    question: "The world's largest boardwalk is located in what U.S. city?",
+    answerList: ["Ocean City, MD", "Coney Island, NY", "Virginia Beach, VA", "Atlantic City, NJ" , "Santa Monica, CA"],
+    answer: 3
 },{
     question: "When the iBook was released in 1999, which was NOT one of the five colors available?",
     answerList: ["Tangerine", "Blueberry", "Key Lime", "Watermelon"],
