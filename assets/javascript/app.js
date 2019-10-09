@@ -6,19 +6,20 @@ var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unanswered = 0;
 
-// Questions array
+// laying out the QUESTIONS - got be an ARRAY of variables
+
 var questions = [{
-    question: "Which album sold more records?",
-    answerList: ["Alanis Morissette's \"Jagged Little Pill\"", "Spice Girls' \"Spice\"", "Shania Twain's \"Come On Over\"", "Metallica's \"Metallica\""],
-    answer: 0
-},{
-    question: "\"Tamagotchi\" is a Japanese portmanteau of what two words?",
-    answerList: ["\"keychain\" and \"creature\"", "\"pocket\" and \"animal\"", "\"egg\" and \"watch\"", "\"handheld\" and \"clock\""],
+    question: "What is the U.S.'s oldest city?",
+    answerList: ["Boston, MA", "Jamestown, VA", "Saint Augustine, FL", "Philadelphia, PA"],
     answer: 2
 },{
-    question: "What was the flavor of the soft drink Surge?",
-    answerList: ["Lemon", "Lime", "Tropical", "Citrus"],
-    answer: 3
+    question: "What was the first American city to host the Olympic Games?",
+    answerList: ["St. Louis, MO", "Atlanta, GA", "Los Angeles, CA", "Salt Lake City, UT"],
+    answer: 0
+},{
+    question: "What museum in the U.S is the most visited?",
+    answerList: ["The Metropolitan Museum of Art", "The National Air and Space Museum", "National Museum of Natural History", "California Academy of Sciences"],
+    answer: 1
 },{
     question: "Who sang the \"Friends\" theme song?",
     answerList: ["Spin Doctors", "The Wallflowers", "Gin Blossoms", "The Rembrandts"],
@@ -37,13 +38,14 @@ var questions = [{
     answer: 3
 }];
 
+
 $("#start").on("click", function() {
 
     // Hide Start button
     $(this).hide();
     $("#brain-power").hide();
 
-    // Display initial time countdown
+    // Displaying the initial countdown
     $("#time").html("<h2>Time Remaining: 30 Seconds</h2>" + "<br>");
     $("#clock-ticks").html("<p>The clock is ticking!</p>" + "<br>");
 
@@ -76,7 +78,7 @@ $("#start").on("click", function() {
         + "<input type='radio' name='answer3' value='3'>" + "<label>" + questions[2].answerList[3] + "</label><br><br>"
     );
 
-    // Question 4
+    // QUESTION 4
     $("#question4").html("<h3>" + questions[3].question + "</h3>");
     $("#answer4").html("<input type='radio' name='answer4' value='0'>" + "<label>" + questions[3].answerList[0] + "</label>"
         + "<input type='radio' name='answer4' value='1'>" + "<label>" + questions[3].answerList[1] + "</label>"
@@ -84,21 +86,21 @@ $("#start").on("click", function() {
         + "<input type='radio' name='answer4' value='3'>" + "<label>" + questions[3].answerList[3] + "</label><br><br>"
     );
 
-    // Question 5
+    // QUESTION 5
     $("#question5").html("<h3>" + questions[4].question + "</h3>");
     $("#answer5").html("<input type='radio' name='answer5' value='0'>" + "<label>" + questions[4].answerList[0] + "</label>"
         + "<input type='radio' name='answer5' value='1'>" + "<label>" + questions[4].answerList[1] + "</label>"
         + "<input type='radio' name='answer5' value='2'>" + "<label>" + questions[4].answerList[2] + "</label>"
         + "<input type='radio' name='answer5' value='3'>" + "<label>" + questions[4].answerList[3] + "</label><br><br>"
     );
-    // Question 6
+    // QUESTION 6
     $("#question6").html("<h3>" + questions[5].question + "</h3>");
     $("#answer6").html("<input type='radio' name='answer6' value='0'>" + "<label>" + questions[5].answerList[0] + "</label>"
         + "<input type='radio' name='answer6' value='1'>" + "<label>" + questions[5].answerList[1] + "</label>"
         + "<input type='radio' name='answer6' value='2'>" + "<label>" + questions[5].answerList[2] + "</label>"
         + "<input type='radio' name='answer6' value='3'>" + "<label>" + questions[5].answerList[3] + "</label><br><br>"
     );
-    // Question 7
+    // QUESTION 7
     $("#question7").html("<h3>" + questions[6].question + "</h3>");
     $("#answer7").html("<input type='radio' name='answer7' value='0'>" + "<label>" + questions[6].answerList[0] + "</label>"
         + "<input type='radio' name='answer7' value='1'>" + "<label>" + questions[6].answerList[1] + "</label>"
