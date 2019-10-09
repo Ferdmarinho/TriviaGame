@@ -33,7 +33,7 @@ var questions = [{
     answerList: ["Ocean City, MD", "Coney Island, NY", "Virginia Beach, VA", "Atlantic City, NJ" , "Santa Monica, CA"],
     answer: 3
 },{
-    question: "When the iBook was released in 1999, which was NOT one of the five colors available?",
+    question: "Which one was the first university in the US?",
     answerList: ["Tangerine", "Blueberry", "Key Lime", "Watermelon"],
     answer: 3
 }];
